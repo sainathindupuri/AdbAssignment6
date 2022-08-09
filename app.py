@@ -19,7 +19,7 @@ def Student():
     print(query_str)
     cursor.execute(query_str+" ORDER BY a.DATE")
     data = cursor.fetchall()
-    return render_template('Student.html', data = data)
+    return render_template('student.html', data = data)
 
 @app.route('/StudentMessage', methods=['POST', 'GET'])
 def StudentMessage():
