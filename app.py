@@ -1,4 +1,3 @@
-from tkinter import CURRENT
 import pyodbc
 from datetime import datetime
 from flask import Flask, Request,redirect, render_template, request, flash
@@ -40,7 +39,7 @@ def StudentMessage():
     # data = cursor.fetchall()
 
 
-    return redirect("http://localhost:5000/Student")
+    return redirect("https://adbsainathquiz5.azurewebsites.net/Student")
 
 
 @app.route('/TeacherMessage', methods=['POST', 'GET'])
@@ -61,7 +60,7 @@ def TeacherMessage():
     # data = cursor.fetchall()
 
 
-    return redirect("http://localhost:5000/Teacher")
+    return redirect("https://adbsainathquiz5.azurewebsites.net/Teacher")
 
 @app.route('/Teacher', methods=['POST', 'GET'])
 def Teacher():
